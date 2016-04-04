@@ -12,7 +12,7 @@ function init(){
 }
 function onDeviceReady(){
     var options = {frequency: 200};
-    navigator.compass.watchAcceleration(onSuccess, onError, options);
+    navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
 }
 function onSuccess(acc){
     $("#x").html("x: " + acc.x);
